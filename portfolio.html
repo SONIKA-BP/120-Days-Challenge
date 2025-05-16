@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sonika B P</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        nav{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color: red; */
+        }
+.logo img{
+    width:150px;
+    margin-left: 50px;
+}
+.ul-list{
+    display:flex;
+    gap:80px;
+    margin-left:450px;
+}
+.ul-list li{
+    list-style: none;
+}
+.ul-list li a{
+    text-decoration: none;
+    color:var(--secondary-color);
+    font-size: 23px;
+    transition: color 0.3s;
+}
+.ul-list li a:hover{
+    color:red;
+}
+.btn img{
+    width:40px;
+    margin-right: 50px;
+}
+.container{
+    display:flex;
+    /* background-color: antiquewhite; */
+    /* gap:30px; */
+    /* height:80vh; */
+    align-items: center;
+    /* justify-content: space-around; */
+    /* background: linear-gradient(#2193b0,#6dd5ed); */
+
+}
+.left{
+    /* background-color: aquamarine; */
+    max-width: 45%;
+    padding:30px;
+    margin-left:50px;
+}
+.left h1{
+    font-size: 60px;
+   
+}
+.left h1 span{
+    color:red;
+}
+.left p{
+    font-size: 18px;
+    margin-top:20px;
+    line-height: 35px;
+    text-align: justify;
+
+}
+.left a{
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color:var(--secondary-color);
+    width:160px;
+    height: 43px;
+    border-radius:10px;
+    display: block;
+    text-align: center;
+    padding:10px;
+    margin-top:2rem;
+}
+.right{
+    /* background-color: blue; */
+    max-width: 50%;
+  
+}
+.right img{
+    width: 60%;
+    height: 670px;
+    background-position: center;
+    background-size: cover;
+    margin-left:200px;
+    /* position: absolute; */
+    transition: transform 0.8s;
+    transform: left 1s;
+    /* border-radius: 10px; */
+  }
+  .right img:hover{
+    transform: translateX(30px);
+    
+   
+
+  }
+  /* :root{
+    --primary-color:white;
+    --secondary-color:black;
+  }
+  .dark{
+    --primary-color:black;
+    --secondary-color:white;
+  } */
+
+  :root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+
+.dark {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="logo3.png" id="logo"></div>
+        <ul class="ul-list">
+            <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+               <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="btn"><img src="moon.png" id="btn" onclick="change()"></div>
+    </nav>
+
+    <div class="container">
+        <div class="left">
+            <h1>I'm <span>Sonika B P</span></h1>
+            <p>I am a passionate and dedicated Full Stack Developer and UI/UX Designer 
+                with a strong focus on building responsive,user-friendly,and high-performance
+                 web applications. With experience across both front-end and back-end technologies,
+                  I am skilled in creating seamless digital experiences that cater to both user needs
+                   and technical requirements.</p>
+                   <a href="https://drive.google.com/file/d/1j6YwUhR8IdVCTZZYB3R7cEtTMrS_yN3V/view?usp=sharing">Download CV</a>
+        </div>
+        <div class="right">
+            <img src="girl.png">
+        </div>
+    </div>
+</body>
+<script>
+    let btn=document.getElementById("btn");
+    let body=document.body;
+    let logo=document.getElementById("logo");
+    function change(){
+        body.classList.toggle('dark')
+        if(body.classList.contains('dark')){
+            logo.src="logochange.png";
+            btn.src="sun.png";
+        }
+        else{
+            logo.src="logo3.png";
+            btn.src="moon.png";
+        }
+    }
+
+  
+
+</script>
+</html>
