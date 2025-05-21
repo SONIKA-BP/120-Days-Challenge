@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | Sonika B P</title>
+    <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            body{
+                background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('background.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 100%;
+            }
+            .nav-container{
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+            #logo{
+                width:60px;
+                height:50px;
+                margin-left: 80px;
+            }
+            .list-container{
+                display:flex;
+                gap:100px;
+                margin-right: 80px;
+
+            }
+            .list-container li{
+                list-style: none;
+            }
+            .list-container li a{
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                transition: color 0.8s;
+            }
+            .list-container li a:hover{
+                color:blue;
+            }
+            .hero-section{
+                margin-top:80px;
+                display:flex;
+                /* gap:50px; */
+                align-items: center;
+                justify-content: space-around;
+             
+            }
+            .left{
+                /* background-color: red; */
+                width:45%;
+                /* height:80vh; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding:40px;
+            }
+            .left-content h1{
+                font-size:70px;
+                color:white;
+                margin-bottom: 4px;
+            }
+            .left-content p{
+                color:white;
+                text-align: justify;
+                line-height: 30px;
+            }
+            .left-content button{
+                width:150px;
+                height: 42px;
+                background-color: transparent;
+                border-radius: 25px;
+                background-color:white;
+                font-size: 15px;
+                border:none;
+                outline: none;
+                margin-top: 20px;
+                transition: background-color 1s,transform 0.8s,color 0.8s;
+            }
+            .left-content button:hover{
+                background-color: blue;
+                transform: translateY(-5px);
+                color:white;
+            }
+
+            .right{
+                /* background-color: aqua; */
+                width:45%;
+                /* height: 80vh; */
+                display:flex;
+                flex-wrap: wrap;
+                gap:40px;
+            }
+
+            .image{
+                width:300px;
+                height:250px;
+                border-radius: 10px;
+                transition: transform 0.8s;
+                cursor: pointer;
+            }
+            .image:hover{
+                transform: translateY(-10px);
+            }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+    
+        <div><img src="DesertLogo.png" id="logo"></div>
+        <ul class="list-container">
+            <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+               <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="hero-section">
+        <div class="left">
+            <div class="left-content">
+            <h1>Sahara</h1>
+            <P>The Sahara is known for its extreme temperature, with scorching hot days and cold nights. 
+                Temperature can soar up to 50 degree celsius during the day and plummet to near-freezing at night.
+                 It's not just endless sand dunes.
+                The Sahara also has rocky plateaus, mountains and salt flats.</P>
+            <button>Explore</button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="pic-1.png" class="image">
+            <img src="pic-2.png" class="image">
+            <img src="pic-3.png" class="image">
+            <img src="pic-4.png" class="image">
+        </div>
+    </div>
+</body>
+</html>
